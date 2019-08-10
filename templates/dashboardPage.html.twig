@@ -1,0 +1,61 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block page_title %}Overview{% endblock %}
+
+{% block stylesheet %}
+    {{ parent() }}
+
+    <link href="{{ asset('css/DashboardCss.css') }}" rel="stylesheet"/>
+{% endblock %}
+
+{% block page_content %}
+    <div class="row">
+        <div class="col-10 offset-1">
+            <div class="row">
+                <div class="col-12">
+                    <div class="flex-container">
+                        <div class="flex-item">
+                            <div class="box graphBox">
+                                <div id="customersByCountry"></div>
+                            </div>
+                        </div>
+                        <div class="flex-item">
+                            <div class="box graphBox">
+                                <div id="receiptsByMonth"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="flex-container">
+                        <div class="flex-item">
+                            <div class="box graphBox">
+                                <div id="bestSales"></div>
+                            </div>
+                        </div>
+                        <div class="flex-item">
+                            <div class="box graphBox">
+                                <div id="mostProfitable"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block body_javascript %}
+    {{ parent() }}
+
+    <script type="text/javascript">
+        {{ gc_draw(customersByCountry, 'customersByCountry') }}
+        {{ gc_draw(receiptsByMonth, 'receiptsByMonth') }}
+        {{ gc_draw(bestSales, 'bestSales') }}
+        {{ gc_draw(mostProfitable, 'mostProfitable') }}
+    </script>
+{% endblock %}

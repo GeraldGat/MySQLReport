@@ -1,0 +1,53 @@
+body 
+{
+    background-color: #343A40!important;
+}
+
+.flash-error
+{
+    background-color: red;
+}
+
+.flash-success
+{
+    background-color: green;
+}
+
+.flash-success, .flash-error
+{
+    width: 100%;
+    text-align: center;
+}
+
+.flex-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.flex-item
+{
+    display: flex;
+    padding: 10px;
+    flex: 1;
+}
+
+.pageTitle
+{
+    margin: 10px;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+
+.box, .pageTitle 
+{
+    background-color: #3E454D;
+    color: #17a2b8;
+}
+
+.box
+{
+    width: 100%;
+}

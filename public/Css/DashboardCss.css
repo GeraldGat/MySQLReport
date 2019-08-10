@@ -1,0 +1,9 @@
+.graphBox > div
+{
+    display: inline-block;
+}
+
+.graphBox
+{
+    text-align: center;
+}

@@ -1,0 +1,3 @@
+mysqlreport_dashboard:
+   path: /
+   controller: App\Controller\MySQLReportController::dashboard
