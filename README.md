@@ -1,5 +1,5 @@
-# WebsiteScreenshot
-Quick exercise of an application being able to take screenshot of website pushing it to your google drive.
+# MySQLReport
+Simple dashboard in symfony.
 ## Getting started
 ### Installation
 First download or [clone](https://help.github.com/en/articles/cloning-a-repository) this repository.
